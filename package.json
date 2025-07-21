@@ -1,0 +1,15 @@
+{
+  "name": "leetcodemetrics",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shashi",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "tailwindcss": "^3.4.17"
+  }
+}

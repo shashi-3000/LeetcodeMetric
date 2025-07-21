@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetcodeMetrics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-900 flex justify-center items-center p-10 min-h-screen">
+
+    <div class=" p-10 bg-slate-500 rounded-xl items-center flex flex-col justify-center">
+        <h1 class="text-blue-950 text-[40px] font-bold p-3 mb-5">Leetcode Metrics</h1>
+
+        <div class="text-teal-950 flex flex-col justify-center items-center mb-4">
+            <p class="font-semibold text-lg">Enter your Username below:</p>
+            <div class="mt-2">
+                <input id="userInput" type="text" placeholder="Enter your Username" class="p-2 rounded-md">
+                <button id="searchBtn" class="font-semibold text-sm bg-teal-950 rounded-lg px-3 py-2 hover:bg-teal-800 text-white">Search</button>
+            </div>
+        </div>
+
+        <div>
+            <!-- progress -->
+            <div class=" p-5 space-x-4 flex justify-center">
+                <div id="easyCircle" 
+                    class="w-24 h-24 rounded-full flex items-center justify-center text-white font-bold text-center text-sm"
+                    style="--progress: 0%; background: conic-gradient(#22c55e var(--progress), #1e293b var(--progress));">
+                    <span id="easyLabel">Easy</span>
+                </div>                                                 
+                <div id="mediumCircle" 
+                    class="w-24 h-24 rounded-full flex items-center justify-center text-white font-bold text-center text-sm"
+                    style="--progress: 0%; background: conic-gradient(#c5b209 var(--progress), #1e293b var(--progress));">
+                    <span id="mediumLabel">Medium</span>
+                </div>                                                 
+ 
+                <div id="hardCircle"
+                    class="w-24 h-24 rounded-full flex items-center justify-center text-white font-bold text-center text-sm"
+                    style="--progress: 0%; background: conic-gradient(#dc2626 var(--progress), #1e293b var(--progress));">
+                    <span id="hardLabel">Hard</span>
+                </div>
+            </div>
+
+
+            <!--stats cards -->
+            <div id="cards">
+                <!-- directly populate card from js -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
